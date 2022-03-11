@@ -37,7 +37,7 @@
                                    <a class="nav-link" href="#">{{ $navs[4]->tabs }}</a>
                                 </li>
                              </ul>
-                             <button class="btn btn-primary">{{ $navs[0]->button }}</button>
+                             <button class="btn btn-primary"><a href="/welcomeback">{{ $navs[0]->button }}</a></button>
                           </div>
                        </nav>
                     </div>
