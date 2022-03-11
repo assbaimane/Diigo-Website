@@ -9,6 +9,7 @@
                 <th scope="col">ID</th>
                 <th scope="col">Titre</th>
                 <th scope="col">Sous-titre</th>
+                <th scope="col">Description</th>
             </tr>
             </thead>
             <tbody>
@@ -17,7 +18,7 @@
                         <th scope="row">{{ $titre->id }}</th>
                         <td>{{ $titre->titre }}</td>
                         <td>{{ $titre->soustitre }}</td>
-
+                        <td>{{ $titre->description }}</td>
                         <td class="d-flex">
                             <a href="{{ route("titre.edit", $titre->id) }}" 
                             class="btn btn-primary">Edit</a>
