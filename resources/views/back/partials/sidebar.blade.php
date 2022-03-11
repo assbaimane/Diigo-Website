@@ -3,7 +3,7 @@
     <div class="logo-details">
       <i class='icon de code'></i>
         <div class="logo_name">CodingSchool</div>
-        <i class='text-light  fa-bars' id="btn" ></i>
+        <i class='text-light fa-bars' id="btn" ></i>
         {{-- text-light fa-solid  fa-bars --}}
       </div>
     <ul class="nav-list">
@@ -41,18 +41,18 @@
        <span class="tooltip">Features</span>
      </li>
      <li>
-       <a href="/testimonial">
-         <i class='fa-solid fa-hand-wave' ></i>
-         <span class="links_name">Testimonial</span>
-       </a>
-       <span class="tooltip">Testimonial</span>
-     </li>
-     <li>
        <a href="/portfolio">
-         <i class='fa-solid fa-paintbrush-pencil' ></i>
+         <i class='fa-solid fa-tasks-alt' ></i>
          <span class="links_name">Portfolio</span>
        </a>
        <span class="tooltip">Portfolio</span>
+     </li>
+     <li>
+       <a href="/testimonial">
+        <i class="fas fa-comment-alt"></i>
+         <span class="links_name">Testimonial</span>
+       </a>
+       <span class="tooltip">Testimonial</span>
      </li>
      <li>
        <a href="/footer">
@@ -65,7 +65,7 @@
          <div class="profile-details">
            <!--<img src="profile.jpg" alt="profileImg">-->
            <div class="name_job">
-             <div class="name">Team Isma-Imane</div>
+             <div class="name">Imane</div>
              <div class="job">Web designer à MG</div>
            </div>
          </div>
