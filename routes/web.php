@@ -116,4 +116,8 @@ Route::get('/footer', function () {
     $footers = Footer::all();
     return view('back/pages/footer', compact('footers'));
 });
+Route::get("back/pages/footer", [FooterController::class, "index"])->name("footers.index");
+Route::post("back/footer/{id}/delete", [FooterController::class, "destroy"])->name("footer.destroy");
+Route::get("back/footer/{id}/edit", [FooterController::class, "edit"])->name("footer.edit");
+Route::post("back/footer/{id}/update", [FooterController::class, "update"])->name("footer.update");
 

@@ -11,16 +11,10 @@
         rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href={{ asset('css/bootstrap.min.css')}}>
-    <title>SEO Dream - Creative SEO HTML5 Template by TemplateMo</title>
+    <title>Diigo</title>
 
     <link rel="stylesheet" href={{ asset("css/sidebar.css") }}>
     <link rel="stylesheet" href={{ asset('css/fontawesome.css') }}>
-
-    <!-- Additional CSS Files -->
-    {{-- <link rel="stylesheet" href={{ asset('css/fontawesome.css') }}>
-    <link rel="stylesheet" href={{ asset("css/templatemo-seo-dream.css") }}>
-    <link rel="stylesheet" href={{ asset("css/animated.css") }}>
-    <link rel="stylesheet" href={{ asset("css/owl.css") }}> --}}
 
 </head>
 
