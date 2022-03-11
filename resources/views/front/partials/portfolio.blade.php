@@ -16,17 +16,13 @@
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
                         <div class="projects_box ">
-                            <figure><img src="images/projects_img.png" alt="#" /></figure>
+                            <figure><img src={{ $portfolios[0]->img }} alt="#" /></figure>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="projects_box ">
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority
-                                have suffered alteration in some form, by injected humour, or randomised words
-                                which don't look even slightly believableThere are many variations of passages of
-                                Lorem Ipsum available, but the majority have suffered alteration in some form, by
-                                injected humour, or randomised words which don't look even slightly believable</p>
-                            <a class="read_more" href="#">Read more</a>
+                            <p>{{ $portfolios[0]->paragraph }}</p>
+                            <a class="read_more" href="#">{{ $portfolios[0]->button }}</a>
                         </div>
                     </div>
                 </div>

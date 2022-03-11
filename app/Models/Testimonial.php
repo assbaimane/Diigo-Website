@@ -10,4 +10,10 @@ class Testimonial extends Model
     use HasFactory;
 
     protected $table = 'testimonials';
+
+    protected $fillable = [
+       'img',
+       'name',
+       'paragraph'
+    ];
 }

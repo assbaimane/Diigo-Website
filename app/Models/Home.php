@@ -12,9 +12,7 @@ class Home extends Model
     protected $table = 'homes';
 
     protected $fillable = [
-        'conditions',
-        'values',
-        'button',
-        'img'
+        'home',
+        'button'
     ];
 }

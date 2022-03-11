@@ -16,7 +16,34 @@ class NavSeeder extends Seeder
     public function run()
     {
         DB::table("navs")->insert([
-
+            "logo" => "images/logo.png",
+            "name" => "",
+            "tabs" => "Home",
+            "button" => "Login",
+        ]);
+        DB::table("navs")->insert([
+            "logo" => "",
+            "name" => "",
+            "tabs" => "Feature",
+            "button" => "",
+        ]);
+        DB::table("navs")->insert([
+            "logo" => "",
+            "name" => "",
+            "tabs" => "Portfolio",
+            "button" => "",
+        ]);
+        DB::table("navs")->insert([
+            "logo" => "",
+            "name" => "",
+            "tabs" => "Testimonial",
+            "button" => "",
+        ]);
+        DB::table("navs")->insert([
+            "logo" => "",
+            "name" => "",
+            "tabs" => "Contact",
+            "button" => "",
         ]);
     }
 }

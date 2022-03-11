@@ -12,8 +12,8 @@ class Nav extends Model
     protected $table = 'navs';
 
     protected $fillable = [
-        'name',
         'logo',
+        'name',
         'tabs',
         'button'
     ];

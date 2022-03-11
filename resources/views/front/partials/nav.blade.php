@@ -9,7 +9,7 @@
                        <div class="full">
                           <div class="center-desk">
                              <div class="logo">
-                                <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                <a href="index.html"><img src={{ $navs[0]->logo }} alt="#" /></a>
                              </div>
                           </div>
                        </div>
@@ -22,15 +22,22 @@
                           <div class="collapse navbar-collapse" id="navbarsExample04">
                              <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                   <a class="nav-link" href="#"> Home  </a>
+                                   <a class="nav-link" href="#">{{ $navs[0]->tabs }}</a>
                                 </li>
                                 <li class="nav-item">
-                                   <a class="nav-link" href="#">About</a>
+                                   <a class="nav-link" href="#">{{ $navs[1]->tabs }}</a>
                                 </li>
                                 <li class="nav-item">
-                                   <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#">{{ $navs[2]->tabs }}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">{{ $navs[3]->tabs }}</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#">{{ $navs[4]->tabs }}</a>
                                 </li>
                              </ul>
+                             <button class="btn btn-primary">{{ $navs[0]->button }}</button>
                           </div>
                        </nav>
                     </div>
