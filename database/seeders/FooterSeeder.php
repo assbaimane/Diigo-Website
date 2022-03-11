@@ -16,7 +16,10 @@ class FooterSeeder extends Seeder
     public function run()
     {
         DB::table("footers")->insert([
-
+            "social1" => "facebook",
+            "social2" => "twitter",
+            "social3" => "linkedin",
+            "copyright" => 'Copyright 2019 All Right Reserved By (Free  html Templates)'
         ]);
     }
 }

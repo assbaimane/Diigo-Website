@@ -12,9 +12,9 @@
                  </div>
                  <div class="col-md-12">
                     <ul class="social_icon">
-                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                       <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                       <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                       <li><a href="#"><i class="fa fa-{{ $footers[0] ->social1 }}" aria-hidden="true"></i></a></li>
+                       <li><a href="#"><i class="fa fa-{{ $footers[0] ->social2 }}" aria-hidden="true"></i></a></li>
+                       <li><a href="#"><i class="fa fa-{{ $footers[0] ->social3 }}" aria-hidden="true"></i></a></li>
                     </ul>
                  </div>
               </div>
@@ -23,7 +23,7 @@
               <div class="container">
                  <div class="row">
                     <div class="col-md-12">
-                       <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
+                       <p>{!! str_replace(['(',')'],['<a href="https://html.design/">','</a>'], $footers[0]->copyright) !!}</p>
                     </div>
                  </div>
               </div>

@@ -18,6 +18,7 @@ class TitreSeeder extends Seeder
         DB::table("titres")->insert([
             "titre" => "",
             "soustitre" => "",
+            "description" => ""
         ]);
     }
 }

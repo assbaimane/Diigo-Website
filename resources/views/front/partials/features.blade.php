@@ -15,9 +15,9 @@
                  <div class="row">
                     <div class="col-md-12">
                        <div class="business_box ">
-                          <figure><img src="images/business_img.jpg" alt="#"/></figure>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                          <a class="read_more" href="#">Read more</a>
+                          <figure><img src={{ $features[0]->img }} alt="#"/></figure>
+                          <p>{{ $features[0]->paragraph }}</p>
+                          <a class="read_more" href="#">{{ $features[0]->button }}</a>
                        </div>
                     </div>
                  </div>
