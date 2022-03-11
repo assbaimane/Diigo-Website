@@ -12,14 +12,13 @@
               <div class="row">
                  <div class="col-md-3">
                     <div class="Testimonial_box">
-                       <i><img src="images/plan1.png" alt="#"/></i>
+                       <i><img src={{ $testimonials[0]->img }} alt="#"/></i>
                     </div>
                  </div>
                  <div class="col-md-9">
                     <div class="Testimonial_box">
-                       <h4>Donals</h4>
-                       <p>Tof Lorem Ipsum, you need to be There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a pass <br>
-                          age of Lorem Ipsum, you need to be 
+                       <h4>{{ $testimonials[0]->name }}</h4>
+                       <p>{{ $testimonials[0]->paragraph }}
                        </p>
                     </div>
                  </div>
