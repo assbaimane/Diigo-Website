@@ -4,7 +4,7 @@
                  <div class="row d_flex">
                     <div class="col-md-6">
                        <div class="text-bg">
-                          <h1>Digital Marketing Landing Page 2019</h1>
+                          <h1>{{ $titres[0]->titre }}</h1>
                           <p>{{ $homes[0]->paragraph }}</p>
                           <a href="#">{{ $homes[0]->button }}</a>
                        </div>

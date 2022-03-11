@@ -5,7 +5,7 @@
               <div class="row">
                  <div class="col-md-12">
                     <div class="titlepage">
-                       <h2>Testimonial</h2>
+                       <h2>{{ $titres[3]->titre }}</h2>
                     </div>
                  </div>
               </div>

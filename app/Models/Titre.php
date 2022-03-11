@@ -13,6 +13,7 @@ class Titre extends Model
 
     protected $fillable = [
         'titre',
-        'soustitre'
+        'soustitre',
+        'description'
     ];
 }

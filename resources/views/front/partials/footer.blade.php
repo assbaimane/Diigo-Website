@@ -5,8 +5,8 @@
               <div class="row">
                  <div class="col-md-12 ">
                     <div class="cont">
-                       <h3> <strong class="multi"> Free Multipurpose Responsive</strong><br>
-                          Landing Page 2019
+                       <h3> <strong class="multi">{{  $titres[5]->titre }}</strong><br>
+                          {{  $titres[5]->soustitre }}
                        </h3>
                     </div>
                  </div>

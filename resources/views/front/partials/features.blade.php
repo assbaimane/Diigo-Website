@@ -4,9 +4,9 @@
            <div class="row">
               <div class="col-md-12">
                  <div class="titlepage">
-                    <span>Increase your client for</span>
-                    <h2>Better position of Business</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page </p>
+                    <span>{{ $titres[1]->soustitre }}</span>
+                    <h2>{{ $titres[1]->titre }}</h2>
+                    <p>{{ $titres[1]->description }}</p>
                  </div>
               </div>
            </div>

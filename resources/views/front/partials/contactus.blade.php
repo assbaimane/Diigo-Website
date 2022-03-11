@@ -4,8 +4,8 @@
            <div class="row">
               <div class="col-md-12">
                  <div class="titlepage">
-                    <h2>Contact us</h2>
-                    <span>There are many variations of passages of Lorem Ipsum available, but the </span>
+                    <h2>{{ $titres[4]->titre }}</h2>
+                    <span>{{ $titres[4]->soustitre }}</span>
                  </div>
               </div>
            </div>
