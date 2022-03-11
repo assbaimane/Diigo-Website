@@ -9,6 +9,12 @@ use App\Models\Nav;
 use App\Models\Portfolio;
 use App\Models\Titre;
 use App\Http\Controllers\TitreController;
+use App\Http\Controllers\NavController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\FooterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,7 +48,7 @@ Route::get('/welcomeback', function () {
 Route::get('/titre', function () {
     $titres = Titre::all();
     return view('back/pages/titre', compact('titres'));
-});
+}); 
 Route::get("back/pages/titre", [TitreController::class, "index"])->name("titres.index");
 Route::post("back/titre/{id}/delete", [TitreController::class, "destroy"])->name("titre.destroy");
 Route::get("back/titre/{id}/edit", [TitreController::class, "edit"])->name("titre.edit");
@@ -53,6 +59,10 @@ Route::get('/nav', function () {
     $navs = Nav::all();
     return view('back/pages/nav', compact('navs'));
 });
+Route::get("back/pages/nav", [NavController::class, "index"])->name("navs.index");
+Route::post("back/nav/{id}/delete", [NavController::class, "destroy"])->name("nav.destroy");
+Route::get("back/nav/{id}/edit", [NavController::class, "edit"])->name("nav.edit");
+Route::post("back/nav/{id}/update", [NavController::class, "update"])->name("nav.update");
 
 
 //-------------------------- HOME --------------------------
