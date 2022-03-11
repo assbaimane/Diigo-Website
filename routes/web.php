@@ -70,6 +70,10 @@ Route::get('/home', function () {
     $homes = Home::all();
     return view('back/pages/home', compact('homes'));
 });
+Route::get("back/pages/home", [HomeController::class, "index"])->name("homes.index");
+Route::post("back/home/{id}/delete", [HomeController::class, "destroy"])->name("home.destroy");
+Route::get("back/home/{id}/edit", [HomeController::class, "edit"])->name("home.edit");
+Route::post("back/home/{id}/update", [HomeController::class, "update"])->name("home.update");
 
 
 //-------------------------- FEATURE --------------------------

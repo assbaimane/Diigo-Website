@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-md-6">
                        <div class="text-img">
-                          <figure><img src="images/box_img.png" alt="#"/></figure>
+                          <figure><img src={{ $homes[0]->img }} alt="#"/></figure>
                        </div>
                     </div>
                  </div>
