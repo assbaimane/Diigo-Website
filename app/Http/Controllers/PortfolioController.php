@@ -9,7 +9,7 @@ class PortfolioController extends Controller
 {
     public function index(){
         $portfolios = Portfolio::all();
-        return view("back.pages.portfolios", compact("portfolios"));
+        return view("back.pages.portfolio", compact("portfolios"));
     }
 
     public function destroy($id)

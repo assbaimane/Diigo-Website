@@ -87,18 +87,28 @@ Route::get("back/feature/{id}/edit", [FeatureController::class, "edit"])->name("
 Route::post("back/feature/{id}/update", [FeatureController::class, "update"])->name("feature.update");
 
 
-//-------------------------- ABOUTUS --------------------------
-Route::get('/testimonial', function () {
-    $testimonials = Testimonial::all();
-    return view('back/pages/testimonial', compact('testimonials'));
-});
-
-
 //-------------------------- PORTFOLIO --------------------------
 Route::get('/portfolio', function () {
     $portfolios = Portfolio::all();
     return view('back/pages/portfolio', compact('portfolios'));
 });
+Route::get("back/pages/portfolio", [PortfolioController::class, "index"])->name("portfolios.index");
+Route::post("back/portfolio/{id}/delete", [PortfolioController::class, "destroy"])->name("portfolio.destroy");
+Route::get("back/portfolio/{id}/edit", [PortfolioController::class, "edit"])->name("portfolio.edit");
+Route::post("back/portfolio/{id}/update", [PortfolioController::class, "update"])->name("portfolio.update");
+
+
+
+//-------------------------- TESTIMONIAL --------------------------
+Route::get('/testimonial', function () {
+    $testimonials = Testimonial::all();
+    return view('back/pages/testimonial', compact('testimonials'));
+});
+Route::get("back/pages/testimonial", [TestimonialController::class, "index"])->name("testimonials.index");
+Route::post("back/testimonial/{id}/delete", [TestimonialController::class, "destroy"])->name("testimonial.destroy");
+Route::get("back/testimonial/{id}/edit", [TestimonialController::class, "edit"])->name("testimonial.edit");
+Route::post("back/testimonial/{id}/update", [TestimonialController::class, "update"])->name("testimonial.update");
+
 
 
 //-------------------------- FOOTER --------------------------
@@ -106,3 +116,4 @@ Route::get('/footer', function () {
     $footers = Footer::all();
     return view('back/pages/footer', compact('footers'));
 });
+
