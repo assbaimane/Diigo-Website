@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('footers', function (Blueprint $table) {
             $table->id();
+            $table->string('social1',50);
+            $table->string('social2',50);
+            $table->string('social3',50);
+            $table->string('copyright',150);
             $table->timestamps();
         });
     }

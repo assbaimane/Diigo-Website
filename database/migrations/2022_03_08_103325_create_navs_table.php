@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('navs', function (Blueprint $table) {
             $table->id();
-            $table->string('name',255);
             $table->string('logo',255);
+            $table->string('name',255);
             $table->string('tabs',50);
             $table->string("button",255);
             $table->timestamps();

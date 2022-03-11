@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('homes', function (Blueprint $table) {
             $table->id();
+            $table->string('paragraph',800);
+            $table->string('button',50);
             $table->timestamps();
         });
     }
