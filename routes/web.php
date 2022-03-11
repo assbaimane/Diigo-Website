@@ -81,6 +81,10 @@ Route::get('/features', function () {
     $features = Feature::all();
     return view('back/pages/features', compact('features'));
 });
+Route::get("back/pages/features", [FeatureController::class, "index"])->name("features.index");
+Route::post("back/feature/{id}/delete", [FeatureController::class, "destroy"])->name("feature.destroy");
+Route::get("back/feature/{id}/edit", [FeatureController::class, "edit"])->name("feature.edit");
+Route::post("back/feature/{id}/update", [FeatureController::class, "update"])->name("feature.update");
 
 
 //-------------------------- ABOUTUS --------------------------
